@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'imajus:simple-schema-i18n',
+  name: 'dorw123:simple-schema-i18n',
   version: '0.0.7',
   // Brief, one-line summary of the package.
   summary: 'SimpleSchema messages translations using tap:i18n',
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/imajus/meteor-simple-schema-messages-i18n',
+  git: 'https://github.com/dorw123/meteor-simple-schema-i18n',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
