@@ -1,11 +1,11 @@
 import { Meteor } from 'meteor/meteor';
 import { Tracker } from 'meteor/tracker';
 import { TAPi18n } from 'meteor/tap:i18n';
-import NodeSimpleSchema from 'simpl-schema';
+import SimpleSchema from 'simpl-schema';
 
 import './ssm-defaults.js';
 
-class SimpleSchemaWrapper extends NodeSimpleSchema {
+class SimpleSchemaWrapper extends SimpleSchema {
 
   constructor(schema = {}, options = {}) {
     super(schema, _.defaults(options, { tracker: Tracker }));
@@ -21,4 +21,4 @@ class SimpleSchemaWrapper extends NodeSimpleSchema {
 SimpleSchemaWrapper.debug = Meteor.isDevelopment;
 SimpleSchemaWrapper.extendOptions(['autoform', 'denyUpdate', 'denyInsert']);
 
-export const SimpleSchema = SimpleSchemaWrapper;
+export const SimpleSchemaI18n = SimpleSchemaWrapper;
